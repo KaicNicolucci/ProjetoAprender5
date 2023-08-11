@@ -1,0 +1,135 @@
+
+
+/*config padrão*/
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    background-color: #121212;
+}
+
+/*container padrão*/
+
+.container {
+    width: 1366px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*header*/
+
+header {
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 90px;  
+    padding: 8px;
+}
+
+header li  {
+    list-style: none;
+    display: inline;
+    margin-left: 70px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+header li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+}
+
+header li a:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 20%);
+    border-radius: 10px;
+}
+
+/*corpo do site*/
+
+main .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.text  {
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 600px;
+}
+
+.text h2{
+    color: red;
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    text-shadow: 0px 0px 10px rgb(187, 174, 174);
+}
+
+.text p {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.text button {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid red;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-family: sans-serif;
+}
+
+.text button:hover {
+    background-color: red;
+    scale: 1.03;
+}
+
+.image img {
+    height: 600px;
+}
+
+/*config media*/
+
+.text .medias img {
+    height: 70px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 15px;
+    filter: invert(1);
+    background-color: transparent;
+    transition: all .3s;
+}
+
+.text .medias img:hover{
+    transform: translateY(-10px);
+}
+
+/*config image*/
+
+.image img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 500px;
+    width: 600px;
+    border-top-left-radius: 50%;
+    border-left: solid 4px red;
+    border-top: solid 4px red;
+    box-shadow: 0px 0px 20px white;
+}
